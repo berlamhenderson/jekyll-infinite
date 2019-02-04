@@ -68,6 +68,10 @@ textarea {
     padding: 0.2em 0;
 }
 
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .serif {
+    font-weight: 900;
+    font-family: "Fira Sans", arial, sans-serif;
+}
 
 /* ===== Initializr Styles ==================================================
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
