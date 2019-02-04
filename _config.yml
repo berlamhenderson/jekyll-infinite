@@ -11,3 +11,8 @@ defaults:
       type: "posts" # previously `post` in Jekyll 2.2.
     values:
       layout: "post"
+
+sass:
+    load_paths:
+        - _sass
+        - node_modules
