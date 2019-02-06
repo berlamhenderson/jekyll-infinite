@@ -1,0 +1,13 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+$body-font: "Fira Sans", arial, sans-serif !important;
+
+.markdown-body {
+    font-size: calc(14px + .25vw);
+}
+
+@charset "utf-8";
+
+
+@import "primer-markdown/index.scss";

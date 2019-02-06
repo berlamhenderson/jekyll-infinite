@@ -16,3 +16,5 @@ sass:
     load_paths:
         - _sass
         - node_modules
+
+google-site-verification: halo

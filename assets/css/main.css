@@ -1,12 +1,8 @@
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 body {
     font-family: "Fira Sans", arial, sans-serif;
-    line-height: 2;
     font-size: calc(14px + .25vw);
-    position: relative;
-    overflow-x: hidden;
-    margin: 0 auto;
-    padding: 0 1em; }
+}
 
 html,
 button,
@@ -78,7 +74,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .serif {
    ========================================================================== */
 
 .wrapper {
-    width: 90%;
+    width: 700px;
     margin: 0 5%;
 }
 
@@ -244,7 +240,7 @@ nav a:hover {
    =============== */
 
     .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
+        width: 700px; /* 1140px - 10% for margins */
         margin: 0 auto;
     }
 }
