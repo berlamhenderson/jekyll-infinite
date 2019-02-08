@@ -15,29 +15,15 @@
 </head>
 
 <body>
-
-  <div class="header-container">
-    <header class="wrapper clearfix">
-      {% if jekyll.environment == 'production' and site.google-site-verification %}
+  <div class="wrapper">
+    <div class="item-1 header">{% if jekyll.environment == 'production' and site.google-site-verification %}
       <h1 class="title">{{site.title}}</h1>
       {% else %}
       <h1 class="title">Halo</h1>
-      {% endif %}
-    </header>
-  </div>
-
-  <div class="main-container">
-    <div class="main wrapper clearfix">
-      {{ content }}
-    </div> <!-- #main -->
-  </div> <!-- #main-container -->
-
-
-  <div class="footer-container">
-    <footer class="wrapper">
-      Template courtesy of <a href="http://www.initializr.com/">initializr</a>
-    </footer>
-  </div>
+      {% endif %}</div>
+    <div class="item-2 main">{{ content }}</div>
+    <div class="item-4 footer">Footer</div>
+</div>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script>
