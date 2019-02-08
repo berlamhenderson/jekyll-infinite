@@ -5,13 +5,7 @@ title: Homepage
 
 <div class="content">
   {% for post in paginator.posts %}
-    <article class="p-3">
-      <header>
-        <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
-        <h5>{{ post.date | date: "%d %b %Y" }}</h5>
-        <div class="markdown-body">{{ post.content | truncatewords:50 | strip_html }}</div>
-      </header>
-    </article>
+    {% include post-content.html %}
   {% endfor %}
 
   {% if paginator.total_pages > 1 %}

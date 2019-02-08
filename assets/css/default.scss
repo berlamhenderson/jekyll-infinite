@@ -9,13 +9,6 @@ $body-font: "Fira Sans", arial, sans-serif !important;
     font-size: calc(14px + .25vw);
 }
 
-
-article {
-    border: solid 1px #eee;
-}
-article {
-    border-bottom: none !important;
-}
 @import "primer-support/index.scss";
 @import "primer-markdown/index.scss";
 @import "primer-utilities/index.scss";

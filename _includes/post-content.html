@@ -1,0 +1,5 @@
+<article class="p-3">
+    <div class="question"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></div>
+    <time>{{ post.date | date: "%d %b %Y" }}</time>
+    <div class="answer markdown-body">{{ post.content | truncatewords:50 | strip_html }}</div>
+</article>
