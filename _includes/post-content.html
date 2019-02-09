@@ -1,5 +1,35 @@
-<article class="p-3">
-    <div class="question"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></div>
-    <time>{{ post.date | date: "%d %b %Y" }}</time>
-    <div class="answer markdown-body">{{ post.content | truncatewords:50 | strip_html }}</div>
-</article>
+
+      <div class="p-4">
+            <h2 class="font-medium text-lg mb-2">{{ post.title }}</h2>
+            <p class="leading-normal mb-4 text-grey-darker">{{post.content}}
+            </p>
+            <span class="text-sm text-grey">
+              https://uxplanet.org/redesign-neiman-marcus-ios-app-5a0db3119b36
+            </span>
+          </div>
+
+<div class="flex pt-4 px-4">
+    <div class="w-16 mr-2">
+        <img class="p-2 rounded rounded-full" src="https://pbs.twimg.com/profile_images/1090172711320530944/-74DXHX7_normal.jpg">
+    </div>
+
+    <div class="px-2 pt-2 flex-grow">
+        <header>
+            <a href="#" class="text-black no-underline">
+                <span class="font-medium">{{ post.author }}</span>
+                <span class="font-normal text-grey">@rathes</span>
+            </a>
+            <div class="text-xs text-grey flex items-center my-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 mr-1 feather feather-calendar">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <span>{{ post.date | date: "%d %b %Y" }}</span>
+            </div>
+        </header>
+        
+    </div>
+</div>
