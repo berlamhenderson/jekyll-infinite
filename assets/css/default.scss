@@ -1,82 +1,17 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-@charset "utf-8";
-.grid {
-    display: inline-grid;
+.post-content {
+    img {
+        -webkit-filter: sepia(.2) brightness(1.15) saturate(1.4);
+        filter: sepia(.2) brightness(1.15) saturate(1.4)
+    }
 }
 
-.grid > div {
-    margin: 0.05em;
-    border-width: 0.1em;
-    border-style: solid;
-    border-radius: 0.2em;
-    padding: 0.5em;
-    font-family: monospace;
-}
-
-.item-1 {
-    background-color: rgba(242, 46, 138, 0.8);
-    border-color: rgb(242, 46, 138);
-}
-
-.item-2 {
-    background-color: rgba(98, 205, 217, 0.8);
-    border-color: rgb(98, 205, 217);
-}
-
-.item-3 {
-    background-color: rgba(117, 191, 6 , 0.8);
-    border-color: rgb(117, 191, 6);
-}
-
-.item-4 {
-    background-color: rgba(242, 226, 5, 0.8);
-    border-color: rgb(242, 226, 5);
-}
-
-html, body {
-    height: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-.wrapper {
-    display: grid;
-    height: 100%;
-    grid-gap: 10px;
-    grid-template-rows: 50px 1fr auto;
-    grid-template-columns: 1fr 45em 1fr;
-    grid-template-areas: "header header  header"
-                         ". main . "
-                         "footer footer  footer ";
-}
-
-.header {
-    grid-area: header;
-}
-
-.main {
-    grid-area: main;
-}
-.left {
-    grid-area: left;
-}
-.aside {
-    grid-area: aside;
-}
-
-.footer {
-    grid-area: footer;
-}
-
-@media (max-width: 50em) {
-    .wrapper {
-        grid-gap: 0;
-        grid-template-rows: auto 1fr auto;
-        grid-template-columns: 1fr;
-        grid-template-areas: "header "
-                             "main"
-                             "footer ";
+.post-content {
+    img::before {
+        background: rgba(125, 105, 24, .1);
+        content: "";
+        mix-blend-mode: multiply
     }
 }
