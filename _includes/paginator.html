@@ -1,13 +1,19 @@
+<!-- status elements -->
+<div class="max-w-sm mx-auto overflow-hidden object-center my-6">
+  <div class="lds-ripple"><div></div><div></div></div>
+</div>
+<!-- end status elements -->
+
 {% if paginator.total_pages > 1 %}
   <div class="pagination">
     {% if paginator.previous_page %}
       {% if paginator.page == 2 %}
-        <a href="{{ site.baseurl }}/">&laquo; Prev</a>
+        <a class='prev' href="{{ site.baseurl }}/">&laquo; Prev</a>
       {% else %}
-        <a href="{{ site.baseurl }}/page{{ paginator.previous_page }}/">&laquo; Prev</a>
+        <a class='prev' href="{{ site.baseurl }}/page{{ paginator.previous_page }}/">&laquo; Prev</a>
       {% endif %}    
     {% else %}
-      <span>&laquo; Prev</span>
+      <span class='prev'>&laquo; Prev</span>
     {% endif %}
 
     {% if paginator.next_page %}
@@ -27,5 +33,6 @@ var infScroll = new InfiniteScroll( '.container', {
   path: '.next',
   append: '.post',
   hideNav: '.pagination',
+  status: '.lds-ripple',
 });
 </script>
