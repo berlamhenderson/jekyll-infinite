@@ -1,5 +1,5 @@
 baseurl: /jekyll-infinite
-paginate: 3
+paginate: 20
 plugins: [jekyll-paginate] 
 title: wikipajak.org
 im-logo: tiger.png
@@ -11,6 +11,8 @@ defaults:
       type: "posts" # previously `post` in Jekyll 2.2.
     values:
       layout: "post"
+      author:  "diskusipajak"
+      author-avatar: "/assets/png/-tiger.jpg"
 
 sass:
     load_paths:

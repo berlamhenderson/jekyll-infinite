@@ -1,24 +1,28 @@
-<div class="flex pt-4 px-4">
-    <div class="w-16 mr-2 flex-none">
-        <img class="p-2 rounded rounded-full filter-earlybird" src="https://pbs.twimg.com/profile_images/1090172711320530944/-74DXHX7_normal.jpg">
+<div class="max-w-sm mx-auto rounded overflow-hidden shadow-lg my-6">
+        {% if post.image %}
+        <img class="w-full" src="{{ site.baseurl }}/{{ post.image }}" alt="{{ post.title }}">
+        {% endif %}
+    <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2">{{ post.title }}</div>
+        <div class="text-grey-darker text-base">
+            {{ post.content }}
+        </div>
     </div>
-    <div class="px-2 pt-2 flex-no-grow mb-3">
-        <header>
-            <a href="#" class="text-sm text-black no-underline font-medium">{{ post.title }}
-                <span class="font-medium">{{ post.author }}</span>
-                <span class="font-normal text-grey">@rathes</span>
-            </a>
-            <div class="text-xs text-grey flex items-center my-1">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 mr-1 feather feather-calendar">
-                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                    <line x1="16" y1="2" x2="16" y2="6"></line>
-                    <line x1="8" y1="2" x2="8" y2="6"></line>
-                    <line x1="3" y1="10" x2="21" y2="10"></line>
-                </svg>
-                <span>{{ post.date | date: "%d %b %Y" }}</span>
-            </div>
-        </header>
-        <div class="text-sm leading-normal post-content">{{ post.content }}</div>
+
+    <div class="px-6 py-4">
+        {% for tag in post.tags %}
+        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2"><a
+                href="/tags#{{ tag }}" class="no-underline">#{{ tag }}</a></span>
+        {% endfor %}
+    </div>
+
+    <div class="flex items-center px-6 py-4">
+        <img class="w-10 h-10 rounded-full mr-4" src="{{ site.baseurl }}/{{ post.author-avatar }}" alt="{{ post.author }}">
+        <div class="text-sm">
+            <p class="text-black leading-none">{{ post.author }}</p>
+            {% if post.date %}
+            <p class="text-grey-dark"></p>{{ post.date | date: "%B %-d, %Y" }}</p>
+            {% endif %}
+        </div>
     </div>
 </div>
