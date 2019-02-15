@@ -148,4 +148,14 @@ a {
     margin: 0 auto;
 }
 
-/* untuk searc *.w-1\/8 */ 
+/* https://infinite-scroll.com/options.html#elementscroll
+
+    demo : https://codepen.io/desandro/pen/WOpjMM
+    
+    */ 
+.page-load-status {
+    display: none; /* hidden by default */
+    padding-top: 20px;
+    text-align: center;
+    color: #777;
+  }
