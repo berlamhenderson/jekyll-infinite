@@ -38,15 +38,20 @@
 <script type="text/javascript">
   //-------------------------------------//
   // init Infinte Scroll
-  // https://infinite-scroll.com/options.html#hidenav
+  // source : https://infinite-scroll.com/options.html#hidenav
+  //
 
   var infScroll = new InfiniteScroll('.container', {
     path: '.next',
     append: '.post',
     hideNav: '.pagination',
     status: '.page-load-status',
-    checkLastPage: true,
+    checkLastPage: false,
     checkLastPage: '.next',
     hideNav: '.pagination',
+    history: 'push',
+    historyTitle: true,
+    debug: false,
+    prefill: false,
   });
 </script>
