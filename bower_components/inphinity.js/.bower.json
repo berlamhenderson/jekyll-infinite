@@ -1,0 +1,40 @@
+{
+  "name": "inphinity.js",
+  "main": "inphinity.js",
+  "version": "1.0.6",
+  "homepage": "https://github.com/raphamorim/inphinity",
+  "authors": [
+    "Raphael H. Amorim <rapha850@gmail.com>"
+  ],
+  "description": "A infinity scroll without jQuery or other dependency",
+  "keywords": [
+    "infinity",
+    "scroll",
+    "native",
+    "without",
+    "jQuery",
+    "dependency",
+    "infinite",
+    "wordpress",
+    "jekyll",
+    "blog"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "1.0.6",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.6",
+    "commit": "02836732253d7099edc8095db03e8bdcaa51a4f7"
+  },
+  "_source": "https://github.com/raphamorim/inphinity.git",
+  "_target": "^1.0.6",
+  "_originalSource": "inphinity",
+  "_direct": true
+}
